@@ -36,6 +36,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'registration',
     'south',
     'myblog',
 )
@@ -53,7 +55,7 @@ ROOT_URLCONF = 'mysite.urls'
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
-
+ACCOUNT_ACTIVATION_DAYS = 7
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 
