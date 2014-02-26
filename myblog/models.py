@@ -18,5 +18,8 @@ class Category(models.Model):
     posts = models.ManyToManyField(Post, blank=True, null=True,
                                    related_name='categories')
 
+    class Meta:
+        verbose_name_plural = "categories"
+
     def __unicode__(self):
         return self.name
